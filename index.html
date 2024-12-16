@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    main {
+        padding: 20px;
+        height: 100vh;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    section {
+        display: flex;
+    }
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+    .card-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: 10px;
+    }
+    .card-item {
+        width: 100%;
+        height: 80px;
+        background-color: red;
+    }
+</style>
+<body>
+    <main>
+        <section>
+            <header>
+                <div>HOME</div>
+                <div>PRODUCT</div>
+            </header>
+        </section>
+        <section>
+            <div class="card-wrapper">
+                <a href="/product-a.html" class="card-item">TOKO A</a>
+                <div class="card-item">TOKO B</div>
+                <div class="card-item">TOKO C</div>
+                <div class="card-item">TOKO D</div>
+                <div class="card-item">TOKO E</div>
+                <div class="card-item">TOKO F</div>
+                <div class="card-item">TOKO G</div>
+                <div class="card-item">TOKO H</div>
+                <div class="card-item">TOKO I</div>
+                <div class="card-item">TOKO J</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
